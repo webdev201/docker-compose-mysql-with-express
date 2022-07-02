@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "prestart": "npm run database-build",
-    "database-build": "node database/createDB.js && npx knex migrate:latest"
+    "database-build": "npx knex migrate:latest"
   },
   "keywords": [],
   "author": "",
