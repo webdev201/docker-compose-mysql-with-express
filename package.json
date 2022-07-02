@@ -1,0 +1,20 @@
+{
+  "name": "knex-prestart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "prestart": "npm run database-build",
+    "database-build": "node database/createDB.js && npx knex migrate:latest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "knex": "^2.1.0",
+    "mysql2": "^2.3.3"
+  }
+}
